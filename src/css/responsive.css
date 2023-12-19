@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+    body {
+        background-size: 250%;
+    }
+
+    .acordeon {
+        margin: 25px;
+    }
+
+    .acordeon .conteudo-faq .itens .item .pergunta {
+        width: 75%;
+    }
+}

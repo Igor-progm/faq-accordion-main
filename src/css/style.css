@@ -1,0 +1,83 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-image: url(../images/background-pattern-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(275, 100%, 97%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.acordeon {
+    background-color: #fff;
+    min-height: 347px;
+    width: 580px;
+    border-radius: 20px;
+    padding: 40px 0 40px 40px;
+}
+
+.acordeon .header {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.acordeon .header h1 {
+    font-size: 5.2rem;
+    font-weight: 700;
+}
+
+.acordeon .conteudo-faq {
+    width: 90%;
+}
+
+.acordeon .conteudo-faq .itens .item {
+    cursor: pointer;
+    background-image: url(/src/images/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-position: top 0px right 0;
+    border-bottom: 1px solid #e7e6e6;
+    padding-bottom: 25px;
+}
+
+.acordeon .conteudo-faq .itens .item:last-child {
+    border: none;
+    padding-bottom: 0;
+}
+
+.acordeon .conteudo-faq .itens .item .pergunta {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: hsl(292, 42%, 14%);
+    margin-top: 25px;
+    width: 90%;
+    transition: 0.2s ease;
+}
+
+.acordeon .conteudo-faq .itens .item .pergunta:hover {
+    color: blueviolet;
+}
+
+.acordeon .conteudo-faq .itens .item .resposta {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: hsl(292, 16%, 49%);
+    margin-top: 20px;
+    display: none;
+}
+
+.acordeon .conteudo-faq .itens .item.ativo .resposta {
+    display: block;
+}
+
+.acordeon .conteudo-faq .itens .item.ativo {
+    background-image: url(/src/images/icon-minus.svg);
+}
