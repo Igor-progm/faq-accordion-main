@@ -41,7 +41,7 @@ main {
 
 .acordeon .conteudo-faq .itens .item {
     cursor: pointer;
-    background-image: url(/src/images/icon-plus.svg);
+    background-image: url(../images/icon-plus.svg);
     background-repeat: no-repeat;
     background-position: top 0px right 0;
     border-bottom: 1px solid #e7e6e6;
@@ -79,5 +79,5 @@ main {
 }
 
 .acordeon .conteudo-faq .itens .item.ativo {
-    background-image: url(/src/images/icon-minus.svg);
+    background-image: url(../images/icon-minus.svg);
 }
